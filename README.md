@@ -37,3 +37,21 @@ Portfolio Dashboard is a React-based application that allows users to manage and
 - src/shared: Includes Redux slices (portfolio and form), helper functions, and shared constants.
 - src/App.tsx: Main application component that integrates all pages.
 - src/main.tsx: Application entry point.
+
+
+## Installation
+
+### Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Steps
+
+1. **Clone the repository:**
+   git clone https://github.com/yourusername/portfolio-dashboard.git
+   cd portfolio-dashboard
+
+2. **Install dependencies:**
+   npm install
+
+3. **Run the application:**
+   npm start
