@@ -1,0 +1,85 @@
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15vh;
+    height: 60vh;
+    width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    h2 {
+        color: var(--color-primary);
+    }
+    form {
+        height: 89%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--color-primary);
+            border-radius: 4px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--color-primary);
+            border-radius: 4px;
+        }
+        ul {
+            padding: 0;
+            overflow: auto;
+            height: 66%;
+            width: 100%;
+            list-style: none;
+            li {
+                display: flex;
+                justify-content: space-around;
+                padding: 5px 0;
+                cursor: pointer;
+            }
+            li:hover {
+                color: var(--color-primary);
+            }
+        }
+        .inputAdd {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            input {
+                width: 40%;
+            }
+            button {
+                background-color: var(--color-secondary);
+                color: var(--color-background);
+                border: none;
+                border-radius: 4px;
+                padding: 5px 15px;
+                cursor: pointer;
+                transition: background-color 0.1s ease-in-out;
+
+                &:hover {
+                    background-color: var(--color-hover);
+                }
+            }
+        }
+    }
+}

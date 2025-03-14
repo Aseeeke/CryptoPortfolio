@@ -1,0 +1,27 @@
+.container {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-background);
+
+    h1 {
+        font-weight: 400;
+        font-family: Roboto, sans-serif;
+        font-size: clamp(1.5rem, 3vw, 3rem);
+        color: var(--color-secondary);
+    }
+    button {
+        font-size: clamp(1rem, 1.7vw, 2rem);
+        background-color: var(--color-secondary);
+        color: var(--color-background);
+        border-radius: 8px;
+        border: none;
+        padding: 4px 10px;
+        transition: background-color 0.1s ease-in-out;
+    }
+    button:hover {
+        background-color: var(--color-hover);
+    }
+}
