@@ -47,11 +47,15 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### Steps
 
 1. **Clone the repository:**
-   git clone https://github.com/yourusername/portfolio-dashboard.git
-   cd portfolio-dashboard
-
+```bash
+    git clone https://github.com/yourusername/portfolio-dashboard.git
+    cd portfolio-dashboard
+```
 2. **Install dependencies:**
+```bash
    npm install
-
+```
 3. **Run the application:**
+```bash
    npm start
+```
