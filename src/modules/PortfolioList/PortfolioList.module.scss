@@ -33,3 +33,9 @@
         }
     }
 }
+
+.emptyState {
+    color: var(--color-secondary);
+    text-align: center;
+    font-size: clamp(14px, 2vw, 32px);
+}

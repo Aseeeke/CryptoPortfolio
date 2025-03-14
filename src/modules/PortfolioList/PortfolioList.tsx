@@ -83,32 +83,40 @@ export const PortfolioList = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.tableHeader}>
-        <span>Name</span>
-        <span>Quantity</span>
-        <span>Price</span>
-        <span>Total Value</span>
-        <span>Change 24h</span>
-        <span>Percentage</span>
-      </div>
+    <>
+      {assets.length > 0 ? (
+        <div className={styles.container}>
+          <div className={styles.tableHeader}>
+            <span>Name</span>
+            <span>Quantity</span>
+            <span>Price</span>
+            <span>Total Value</span>
+            <span>Change 24h</span>
+            <span>Percentage</span>
+          </div>
 
-      <AutoSizer>
-        {({ height, width }) => (
-          <Grid
-            height={height}
-            width={width}
-            rowCount={assets.length}
-            rowHeight={60}
-            columnCount={6}
-            columnWidth={width / 6}
-            itemData={{ assets }}
-            className={styles.grid}
-          >
-            {Cell}
-          </Grid>
-        )}
-      </AutoSizer>
-    </div>
+          <AutoSizer>
+            {({ height, width }) => (
+              <Grid
+                height={height}
+                width={width}
+                rowCount={assets.length}
+                rowHeight={60}
+                columnCount={6}
+                columnWidth={width / 6}
+                itemData={{ assets }}
+                className={styles.grid}
+              >
+                {Cell}
+              </Grid>
+            )}
+          </AutoSizer>
+        </div>
+      ) : (
+        <div className={styles.emptyState}>
+          <p>No assets found.</p>
+        </div>
+      )}
+    </>
   );
 };
