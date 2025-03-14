@@ -32,8 +32,8 @@ Portfolio Dashboard is a React-based application that allows users to manage and
 - **Axios:** For HTTP requests and fetching asset data.
 
 ## Project Structure
-src/pages: Contains pages.
-src/modules: Contains feature components such as Header, PortfolioList, FormAdd, and PriceUpdater.
-src/shared: Includes Redux slices (portfolio and form), helper functions, and shared constants.
-src/App.tsx: Main application component that integrates all pages.
-src/main.tsx: Application entry point.
+- src/pages: Contains pages.
+- src/modules: Contains feature components such as Header, PortfolioList, FormAdd, and PriceUpdater.
+- src/shared: Includes Redux slices (portfolio and form), helper functions, and shared constants.
+- src/App.tsx: Main application component that integrates all pages.
+- src/main.tsx: Application entry point.
